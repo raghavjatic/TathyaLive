@@ -4,6 +4,14 @@
     app:startDestination="@id/headlinesFragment">
 
     <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.tathyalive.ui.fragments.ArticleFragment"
+        android:label="ArticleFragment">
+        <argument
+            android:name="article"
+            app:argType="com.example.tathyalive.models.Article" />
+    </fragment>
+    <fragment
         android:id="@+id/headlinesFragment"
         android:name="com.example.tathyalive.ui.fragments.HeadlinesFragment"
         android:label="HeadlinesFragment">
@@ -30,12 +38,5 @@
             app:destination="@id/articleFragment"/>
 
     </fragment>
-    <fragment
-        android:id="@+id/articleFragment"
-        android:name="com.example.tathyalive.ui.fragments.ArticleFragment"
-        android:label="ArticleFragment" >
-        <argument
-            android:name="article"
-            app:argType="com.example.tathyalive.models.Article" />
-    </fragment>
+
 </navigation>
